@@ -1,0 +1,82 @@
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     background: #ecf0f1;
+    
+   }
+   
+   .iconCart {
+    width: 50%;
+    height: 100px;
+    margin: 25%;
+
+    
+   }
+   
+   .cart {
+     fill: none;
+     stroke: rgb(128, 102, 223); 
+     stroke-width: 1.8;
+     stroke-linecap: round;
+     stroke-linejoin: round;
+     transform: rotateY(180deg);
+     transform: rotateY(180deg);
+    
+   }
+
+
+   .cart1 {
+     fill: none;
+     stroke:#B0A1EB;
+     stroke-width: 1.8;
+     stroke-linecap: round;
+     stroke-linejoin: round;
+     transform: rotateY(180deg);
+     transform: rotateY(180deg);
+     position: absolute;
+   }
+   
+   .hoverAnimationloader .cart {
+     animation-duration: 2s;
+     animation-timing-function: ease;
+     animation-iteration-count: infinite;
+     animation-name: hoverShop;
+     
+   }
+   button {
+  background-color:#06c;
+  border-radius:.5em;
+  color:#fff;
+  padding:1em 2em;
+   cursor: pointer;
+}
+  button:hover {
+  background-color:green;
+ 
+  color:black;
+
+}
+   
+   @keyframes hoverShop {
+     0% {
+       stroke-dasharray: 100 100;
+       stroke-dashoffset: 0;
+     }
+    50% {
+       stroke-dasharray: 0 100;
+       stroke-dashoffset: 0;
+       }
+   
+     50.1% {
+       stroke-dasharray: 0 100;
+      stroke-dashoffset: -190;
+   
+    }
+     
+     100% {
+       stroke-dasharray: 100 10;
+       stroke-dashoffset: 0;
+     }
+   }
+   
